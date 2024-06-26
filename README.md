@@ -2,7 +2,7 @@
 
 I created this script to help organize my chaotic Downloads folder. As a programmer and designer, I often download various files ranging from code snippets to design assets, and it quickly becomes a mess. This script categorizes files based on their types and moves existing folders into a single folder named "Just Folders" to keep things tidy.
 
-## File Categories
+## Organized Folder File Types
 
 - **Documents**: `.pdf`, `.docx`, `.txt`, `.pptx`, `.xlsx`
 - **Images**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.bmp`, `.heic`, `.avif`, `.webp`, `.svg`
@@ -19,7 +19,7 @@ I created this script to help organize my chaotic Downloads folder. As a program
 - **Adobe Suite**: `.psd`, `.ai`, `.indd`, `.xd`
 - **Fonts**: `.ttf`, `.otf`, `.woff`, `.woff2`
 - **Others**: For all other file types
-- 
+  
 ## Features
 
 - Categorizes files into folders such as Documents, Images, Videos, Music, Archives, Applications, Scripts and Notes, Java, Python, C++, Web Development, PHP, Adobe Suite, Fonts, and Others.
