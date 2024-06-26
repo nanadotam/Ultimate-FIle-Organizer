@@ -12,13 +12,13 @@ I created this script to help organize my chaotic Downloads folder. As a program
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/downloads-organizer.git
-    cd downloads-organizer
+    git clone https://github.com/nanadotam/Ultimate-FIle-Organizer.git
+    cd Ultimate-FIle-Organizer
     ```
 
 2. Run the script:
     ```sh
-    python3 organize_and_move_folders.py
+    python3 ultimate_file_organizer.py
     ```
 
 ## How It Works
