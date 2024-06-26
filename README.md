@@ -1,4 +1,4 @@
-# Downloads Organizer Script
+# Ultimate File Organizer
 
 I created this script to help organize my chaotic Downloads folder. As a programmer and designer, I often download various files ranging from code snippets to design assets, and it quickly becomes a mess. This script categorizes files based on their types and moves existing folders into a single folder named "Just Folders" to keep things tidy.
 
