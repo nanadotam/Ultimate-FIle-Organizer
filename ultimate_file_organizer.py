@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Define the path to your Downloads folder
-downloads_folder = os.path.expanduser('~/Downloads')
+downloads_folder = os.path.expanduser('~/Downloads') # Specify folder path here
 
 # Define the name of the folder to store all existing folders
 all_folders_name = 'Just Folders'
