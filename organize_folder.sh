@@ -16,7 +16,7 @@ if [ ! -d "$target_folder" ]; then
 fi
 
 # Define the name of the folder to store all existing folders
-all_folders_name="Just Folders"
+all_folders_name="Just_Folders"
 all_folders_path="$target_folder/$all_folders_name"
 
 # Define the categories and their corresponding file extensions
@@ -27,13 +27,13 @@ declare -A categories=(
     ["Music"]="mp3 wav flac aac"
     ["Archives"]="zip rar tar.gz 7z"
     ["Applications"]="exe dmg pkg"
-    ["Scripts and Notes"]="sh md"
+    ["Scripts_and_Notes"]="sh md"
     ["Java"]="java class jar"
     ["Python"]="py ipynb"
     ["C++"]="cpp hpp h"
-    ["Web Development"]="html css ts"
+    ["Web_Development"]="html css ts"
     ["PHP"]="php"
-    ["Adobe Suite"]="psd ai indd xd"
+    ["Adobe_Suite"]="psd ai indd xd"
     ["Fonts"]="ttf otf woff woff2"
     ["Others"]=""
 )
@@ -88,7 +88,9 @@ else
             for category in "${!categories[@]}"; do
                 extensions=${categories[$category]}
                 for ext in $extensions; do
-                    if [[ "${file,,}" == *.$ext ]]; then
+                    # Convert file name to lowercase using `tr`
+                    lower_file=$(basename "$file" | tr '[:upper:]' '[:lower:]')
+                    if [[ "$lower_file" == *.$ext ]]; then
                         mv "$file" "$target_folder/$category/"
                         moved=true
                         break
