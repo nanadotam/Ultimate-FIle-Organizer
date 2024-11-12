@@ -34,17 +34,23 @@ I created this script to help organize my chaotic Downloads folder. As a program
     cd Ultimate-FIle-Organizer
     ```
 
-2. Run the script:
+2. Make the script executable:
     ```sh
-    python3 ultimate_file_organizer.py
+    chmod +x organize_folder.sh
     ```
+3. Run the script and specify the folder as an argument
+   ```sh
+   ./organize_folder.sh /path/to/your/folder
+   ```
+   
+   Example:
+   ```sh
+   ./organize_folder.sh ~/Downloads
+   ```
+   
 
 ## How It Works
 
 - **Move Existing Folders:** The script first checks if there are any folders in the Downloads directory (excluding category folders). If found, they are moved to a folder named "Just Folders".
 - **Categorize Files:** The script then categorizes files based on their extensions and moves them into their respective folders.
 - **Check Condition:** If all category folders already exist and there are no lingering files, the script prints a message and does not perform any operations.
-
-## Requirements
-
-- Python 3.x
